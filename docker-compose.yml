@@ -2,11 +2,9 @@
 # ----------------------------------------------------------------------------------------
 # -- Docs: https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker --
 # ----------------------------------------------------------------------------------------
-version: "3.6"
+version: "3.3"
 volumes:
-  shared-workspace:
-    name: "hadoop-distributed-file-system"
-    driver: local
+  shared-workspace: {}
 services:
   jupyterlab:
     image: andreper/jupyterlab:3.0.0-spark-3.0.0
